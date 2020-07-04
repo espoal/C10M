@@ -17,7 +17,7 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 </p> 
 
 ### Pure functions and the cache
-Functional prog
+Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. 
 ```js
 page = async* render(state)
 newState = async eventHandler(oldState, event)
@@ -54,10 +54,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzk3NzM4ODMsMTQ2MTE5ODMyMiwxMz
-EwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUy
-ODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC
-0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2
-MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1Mj
-IsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbLTk1ODQ0MzA1MiwxNDYxMTk4MzIyLDEzMT
+A5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4
+NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLT
+IxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYz
+NjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMi
+wtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LDU5NjkyNDM2XX0=
 -->
