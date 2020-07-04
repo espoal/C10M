@@ -77,7 +77,7 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 
 One common question that often comes up when architecting the backend: Should we use bare metal servers or a PaaS provider?
 A PaaS provider like AWS can significantly reduce time to market, tie the cost to actual consumption and allow to delegate a large portion of system maintenance. On the other hand this comes at a high price point, and a skilled linux engineer is still required to manage everything.
-A good compromise 
+A good compromise is to use a hybrid cloud approach, where we identify a baseline load to be served from bare metal servers, while PaaS is used to meet load spikes, which usually are predictable:
 #### Scaling up or out?
 <p align="justify">
 When I started working on scaling backends, around 7 years ago, the typical server specs were: 4 core / 8 threads, 250-500 mbit/s bandwidth, 32 GB of RAM, 2x SATA SSD. The x86 market  has stagnated a bit in the meanwhile, with moderate IPC increases year over year and a stable core count. Thankfully AMD recently introduced a competitive architecture, and one now can find hexa-core and octa-core servers in the same price bracket. The average NIC today is 1 Gigabit/s, with higher capacity available for a premium. SSDs on the other hand made huge leaps, especially with the switch to PCIe interfaces.<br> 
@@ -87,7 +87,7 @@ In general it's rarely worthwhile to scale up, as hardware prices grow much fast
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDQ3MjkwMCwtODcwOTk4ODM4LDI0MD
+eyJoaXN0b3J5IjpbMTIzOTM3ODA2NCwtODcwOTk4ODM4LDI0MD
 M5ODQ1NSwtMjAzMzk5MTc3NCwtNTYwOTY3OSwyNzUzNzMxMzQs
 MTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MTY4NjE5NjksMTUxND
 QyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5MSwxMjA3NDQ4NzU5
