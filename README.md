@@ -3,6 +3,7 @@
 How to handle 10 Million concurrent users using one single commodity server 
 ## Client
 ### User segmentation
+
 ### Fetch patching
 ## Server
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
@@ -11,5 +12,6 @@ hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMDcxMDAwNiw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbMTc2ODYzNTU0OCwtNDMwNzEwMDA2LDU5Nj
+kyNDM2XX0=
 -->
