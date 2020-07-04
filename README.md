@@ -80,7 +80,8 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 
 This is a unit of our backend, or a pod in Kubernetes term.  It's a collection of containers that can be powered up or down according to our needs. 
-The main container is the HTTP Server, which handle all incoming requests. It can use Node.js if we prioritize rapid prototyping, and then eventually switch to libH2O and mRuby. It's responsible for serving static assets, and to create HTTP responses. Each request is first checked against a Redis cache, very m
+The main container is the HTTP Server, which handle all incoming requests. It can use Node.js if we prioritize rapid prototyping, and then eventually switch to libH2O and mRuby. It's responsible for serving static assets, and to create HTTP responses. Each request is first checked against a Redis cache, very much like on the client side, so that if it is possible the microservices are not queried.
+With this design microservices don't handle the HTTP protocol. This is because they are usually written with dynamic languages, 
 
 
 ### Load considerations
@@ -107,11 +108,11 @@ Let's see if we can reach our goal of 10 M concurrent users
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4Mjk4MDk4LDQzOTUxNDYwNiwyMTM3NT
-Y1MDg5LC0xMTY4OTYxMjcyLDEzNzI1NDg0ODMsLTIwMjk1OTY1
-NzcsLTg3MDk5ODgzOCwyNDAzOTg0NTUsLTIwMzM5OTE3NzQsLT
-U2MDk2NzksMjc1MzczMTM0LDE5NzM2NTIwODQsLTI1NzgwMjI2
-NywxOTE2ODYxOTY5LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4NSw4Mz
-Q0MDAxOTEsMTIwNzQ0ODc1OSwxMjM4Nzc1ODE4LC0xNTEyODQ2
-MjgyXX0=
+eyJoaXN0b3J5IjpbMjExNDY5MzU0Myw0Mzk1MTQ2MDYsMjEzNz
+U2NTA4OSwtMTE2ODk2MTI3MiwxMzcyNTQ4NDgzLC0yMDI5NTk2
+NTc3LC04NzA5OTg4MzgsMjQwMzk4NDU1LC0yMDMzOTkxNzc0LC
+01NjA5Njc5LDI3NTM3MzEzNCwxOTczNjUyMDg0LC0yNTc4MDIy
+NjcsMTkxNjg2MTk2OSwxNTE0NDI0NzA0LDE0MTU4OTM1ODUsOD
+M0NDAwMTkxLDEyMDc0NDg3NTksMTIzODc3NTgxOCwtMTUxMjg0
+NjI4Ml19
 -->
