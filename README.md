@@ -1,6 +1,8 @@
 # C10M
 ## Introduction
-In this article we'll investigate how to solve the **C10M problem**, or how to handle 10 millions concurrent users on commodity hardware. The goal is to do it using one or **two 1 gigabit/s dedicated servers** and eventually scaling out using the cloud, and with a **budget of 300 euros** per month, excluding personnel salary.
+In this article we'll investigate how to solve the **C10M problem**, or how to handle 10 millions concurrent web users on commodity hardware. We'll try to constrain ourselves to using one or **two 1 gigabit/s dedicated servers** and eventually scaling out using the cloud, and with a **budget of 300 euros** per month, excluding personnel salary.
+
+In order to achieve our goals 
 
 ## Smart Client
 ### User segmentation
@@ -19,6 +21,7 @@ hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODIxNjkyNSwtMjAyMzEzNTIyLC0xMD
-c0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
+eyJoaXN0b3J5IjpbLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMj
+AyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0
+MzZdfQ==
 -->
