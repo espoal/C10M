@@ -22,9 +22,9 @@ Additionally, with this flow offline functionality is trivial.
 
 It's important to segment our user base according to their capabilities, optimally by sniffing the request headers or by using conditional imports:
 
- - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 35% of the market.
- - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab communication resource sharing can be achieved using IndexedDB.
- - No Javascript: In case a browser doesn't fall in the previous two categories, we can provide a JS-less experience. This might be considered to
+ - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 33% of the market.
+ - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab communication resource sharing can be achieved using IndexedDB. Roughly 60% of the market.
+ - No Javascript: In case a browser doesn't fall in the previous two categories, we can provide a JS-less experience. This might be considered too much work for such a small user base, but this work can be used to bootstrap a Google AMP implementation, 
  
  Other features useful to segment the user base:
  
@@ -80,11 +80,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODMyNjQyMDYsMTIzODc3NTgxOCwtMT
-UxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1
-MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMT
-YyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEw
-OTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOC
-wtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEw
-NzQ2NTgzNTldfQ==
+eyJoaXN0b3J5IjpbMTczMTA4Mzk2OSwxMjM4Nzc1ODE4LC0xNT
+EyODQ2MjgyLDU3MzM1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUx
+MzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNj
+IwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5
+NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC
+0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3
+NDY1ODM1OV19
 -->
