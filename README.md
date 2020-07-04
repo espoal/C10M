@@ -31,14 +31,15 @@ It's important to segment our user base according to their capabilities, optimal
  
  - ECMAScript support: Usually developers use Babel to compile the code to the minimum common denominator, thus creating huge and bloated Javascript files.
  - Compression support: Brotli is a new compression algorithm, which is much better. 
- - Media support: Even though the web seems to be converging toward WebP, 
+ - Media support: Even though the web seems to be converging toward WebP, it's useful the differentiate media support and serve only the best format.
 
 </p>
 
 ### Entry point and subsequent requests
+<p align="justify">
 
-Don't request everything, read as stream
-
+The first time
+</p>
 ### Bonus: Pure functions and the cache
 <p align="justify">
 Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components.  <br> 
@@ -81,11 +82,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyMDY4OTAzLDEyMDc0NDg3NTksMTIzOD
-c3NTgxOCwtMTUxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMy
-MiwxMzEwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04ND
-A3OTUyODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1
-MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMj
-ExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIz
-MTM1MjJdfQ==
+eyJoaXN0b3J5IjpbLTE5NzE0Mzg5MSwxMjA3NDQ4NzU5LDEyMz
+g3NzU4MTgsLTE1MTI4NDYyODIsNTczMzU2Njc3LDE0NjExOTgz
+MjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwtOD
+QwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgz
+NTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLT
+IxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMjAy
+MzEzNTIyXX0=
 -->
