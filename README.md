@@ -78,16 +78,17 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 One common question that often comes up when architecting the backend: Should we use bare metal servers or a PaaS provider?
 A PaaS provider like AWS can significantly reduce time to market 
 #### Scaling up
-hello
+When I started working on this the typical server specs were: 4 core / 8 threads, 250-500 mbit/s bandwidth, 32 GB of RAM and . 
+
 #### Scaling out
 hello
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTA0MzIyNSwtNTYwOTY3OSwyNzUzNz
-MxMzQsMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MTY4NjE5Njks
-MTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5MSwxMjA3ND
-Q4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNTczMzU2Njc3
-LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5OD
-kyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2
-MDFdfQ==
+eyJoaXN0b3J5IjpbLTE1ODAxMDA5NjksLTU2MDk2NzksMjc1Mz
+czMTM0LDE5NzM2NTIwODQsLTI1NzgwMjI2NywxOTE2ODYxOTY5
+LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNz
+Q0ODc1OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3
+NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OT
+g5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDEx
+NjAxXX0=
 -->
