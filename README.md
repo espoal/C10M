@@ -21,7 +21,7 @@ Additionally, with this flow adding offline functionality is trivial.
 ### User segmentation
 
 <p align="justify">
-It's important to segment our user base according to their capabilities, optimally by sniffing the request headers or by using conditional imports:
+It's important to segment our user base according to their browser capabilities, optimally by sniffing the request headers or by using conditional imports:
 
  - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 33% of the market.
  - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab communication resource sharing can be achieved using IndexedDB. Roughly 60% of the market.
@@ -101,11 +101,11 @@ hello
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNzU2NTA4OSwtMTE2ODk2MTI3MiwxMz
-cyNTQ4NDgzLC0yMDI5NTk2NTc3LC04NzA5OTg4MzgsMjQwMzk4
-NDU1LC0yMDMzOTkxNzc0LC01NjA5Njc5LDI3NTM3MzEzNCwxOT
-czNjUyMDg0LC0yNTc4MDIyNjcsMTkxNjg2MTk2OSwxNTE0NDI0
-NzA0LDE0MTU4OTM1ODUsODM0NDAwMTkxLDEyMDc0NDg3NTksMT
-IzODc3NTgxOCwtMTUxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5
-ODMyMl19
+eyJoaXN0b3J5IjpbMjAyMDQwMjg0MSwyMTM3NTY1MDg5LC0xMT
+Y4OTYxMjcyLDEzNzI1NDg0ODMsLTIwMjk1OTY1NzcsLTg3MDk5
+ODgzOCwyNDAzOTg0NTUsLTIwMzM5OTE3NzQsLTU2MDk2NzksMj
+c1MzczMTM0LDE5NzM2NTIwODQsLTI1NzgwMjI2NywxOTE2ODYx
+OTY5LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMT
+IwNzQ0ODc1OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1
+NjY3N119
 -->
