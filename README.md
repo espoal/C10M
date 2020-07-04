@@ -1,7 +1,7 @@
 # C10M
 ## Introduction
 <p align="justify">
-In this article we'll investigate how to solve the **C10M problem**, or how to handle 10 millions concurrent web users on commodity hardware. We'll try to constrain ourselves to using one or **two 1 gigabit/s dedicated servers** and eventually scaling out using the cloud, and with a **budget of 300 euros** per month, excluding personnel salary.
+In this article we'll investigate how to solve the <b>C10M problem</, or how to handle 10 millions concurrent web users on commodity hardware. We'll try to constrain ourselves to using one or **two 1 gigabit/s dedicated servers** and eventually scaling out using the cloud, and with a **budget of 300 euros** per month, excluding personnel salary.
 
 In order to achieve our goals we'll have to rethink how the clients will interact with the backend, exploiting what modern browsers offer us. We'll also make sure to deliver the fastest user experience possible, while forcing as few rules as possible to developers.
 </p>
@@ -83,11 +83,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzND
-QwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYy
-ODIsNTczMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OT
-QwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0
-NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjExMDk3MDIxLD
-kxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2MTgsLTEyODU5
-MDYwMTBdfQ==
+eyJoaXN0b3J5IjpbLTIwMDMxMTM3NzksMTUxNDQyNDcwNCwxND
+E1ODkzNTg1LDgzNDQwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4
+MTgsLTE1MTI4NDYyODIsNTczMzU2Njc3LDE0NjExOTgzMjIsMT
+MxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1
+Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNS
+wtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1
+NjM2MThdfQ==
 -->
