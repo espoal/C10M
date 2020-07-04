@@ -1,6 +1,6 @@
 # C10M
 ## Introduction
-In this article we'll investigate how to solve the C10M problem, or how to handle 10 millions concurrent users
+In this article we'll investigate how to solve the **C10M problem**, or how to handle 10 millions concurrent users on commodity hardware. The goal is to do it using one or two dedicated servers, eventually scaling out 
 ## Smart Client
 ### User segmentation
 Hello
@@ -18,6 +18,6 @@ hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzMyMDMxMiwtMjAyMzEzNTIyLC0xMD
+eyJoaXN0b3J5IjpbMjEwNzE5MDc0MywtMjAyMzEzNTIyLC0xMD
 c0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
 -->
