@@ -5,19 +5,23 @@ In this article we'll investigate how to solve the **C10M problem**, or how to h
 In order to achieve our goals we'll have to rethink how the clients will interact with the backend, exploiting what modern browsers offer us. We'll also make sure to deliver the fastest user experience possible, while forcing as few rules as possible to developers.
 
 ## Smart Client
+### Fetch patching and HTTP 304
+
+The key 
+
 ### User segmentation
 
 Hello
 
- - Shared Worker:  Modern blink-based browsers, 
- - Service Worker: Webkit powered browsers, older browsers 
+ - Shared Worker:  Browsers that support sharing threads across tabs. Modern blink-based browsers, 
+ - Service Worker: Browsers that  Webkit powered browsers, older browsers 
  - No Javascript:
  
  Other features useful to segment the user base:
  - Compression support:
  - Media support:
 
-### Fetch patching and HTTP 304
+
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 ### Hybrid Cloud Approach
@@ -26,7 +30,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLT
-YzODIxNjkyNSwtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3
-MTAwMDYsNTk2OTI0MzZdfQ==
+eyJoaXN0b3J5IjpbLTI4NTc0MzUzNywtMjExODU2MzYxOCwtMT
+I4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2
+NTgzNTksLTQzMDcxMDAwNiw1OTY5MjQzNl19
 -->
