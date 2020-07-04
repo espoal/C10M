@@ -36,16 +36,18 @@ Hello
 
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
-### Hybrid Cloud Approach
+### Scaling
+#### Hybrid Cloud Approach
 hello
-####
+#### Scaling 
+hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMz
-M5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5
-NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC
-0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5
-MjQzNl19
+eyJoaXN0b3J5IjpbLTU0NzgwMjk3NSwxNjIwNzExNDc1LC0xMT
+g3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgx
+MjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC
+02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMw
+NzEwMDA2LDU5NjkyNDM2XX0=
 -->
