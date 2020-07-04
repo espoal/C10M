@@ -29,7 +29,7 @@ newState = async* eventHandler(oldState, event)
 updates = async* conciliate(newState, oldState)
 ```
 <p align="justify">
-Since render is a pure function that depends only on the state, we can bootstrap the DOM by 
+Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. 
 </p>
 
 ### Entry point and subsequent requests
@@ -65,7 +65,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTg3NTM5MywxNDYxMTk4MzIyLDEzMT
+eyJoaXN0b3J5IjpbLTY4ODk2Nzk2OSwxNDYxMTk4MzIyLDEzMT
 A5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4
 NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLT
 IxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYz
