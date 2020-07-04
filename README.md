@@ -78,11 +78,12 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
+<p align="justify">
 
 This is a unit of our backend, or a pod in Kubernetes term.  It's a collection of containers that can be powered up or down according to our needs. 
 The main container is the HTTP Server, which handle all incoming requests. It can use Node.js if we prioritize rapid prototyping, and eventually switch to libH2O and mRuby for performance. It's responsible for serving static assets, and to create HTTP responses. Each request is first checked against a Redis cache, very much like on the client side, so that if it is possible the microservices are not queried.
-With this design microservices don't handle the HTTP protocol, so they can be written  . We exploit the concept of locality by using Unix Domain Socket, which provide a 25-50% boost in performance and latency c  
-
+With this design microservices don't handle the HTTP protocol, from which they are isolated. For communication inside the unit we exploit locality by using Unix Domain Socket, which provide a 25-50% boost in performance and latency compared to the TCP/IP stack.  
+</p>
 
 ### Load considerations
 #### Hybrid Cloud Approach
@@ -108,11 +109,11 @@ Let's see if we can reach our goal of 10 M concurrent users
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc3NDQ5MDQsNDM5NTE0NjA2LDIxMz
-c1NjUwODksLTExNjg5NjEyNzIsMTM3MjU0ODQ4MywtMjAyOTU5
-NjU3NywtODcwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5MTc3NC
-wtNTYwOTY3OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMjU3ODAy
-MjY3LDE5MTY4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkzNTg1LD
-gzNDQwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLTE1MTI4
-NDYyODJdfQ==
+eyJoaXN0b3J5IjpbMTMxOTEwMzU3OCw0Mzk1MTQ2MDYsMjEzNz
+U2NTA4OSwtMTE2ODk2MTI3MiwxMzcyNTQ4NDgzLC0yMDI5NTk2
+NTc3LC04NzA5OTg4MzgsMjQwMzk4NDU1LC0yMDMzOTkxNzc0LC
+01NjA5Njc5LDI3NTM3MzEzNCwxOTczNjUyMDg0LC0yNTc4MDIy
+NjcsMTkxNjg2MTk2OSwxNTE0NDI0NzA0LDE0MTU4OTM1ODUsOD
+M0NDAwMTkxLDEyMDc0NDg3NTksMTIzODc3NTgxOCwtMTUxMjg0
+NjI4Ml19
 -->
