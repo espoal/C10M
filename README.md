@@ -29,7 +29,7 @@ newState = async* eventHandler(oldState, event)
 updates = async* conciliate(newState, oldState)
 ```
 
-### Smart requests
+### Entry point anSmart requests
 Don't request everything, read as stream
 ### User segmentation
 
@@ -45,7 +45,9 @@ It's important
  - Compression support:
  - Media support:
 
+### Handle sensitive data
 
+hello
 
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
@@ -60,10 +62,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3NzM3Njk5LDE0NjExOTgzMjIsMTMxMD
-k5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3
-LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMj
-ExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2
-MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC
-0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
+eyJoaXN0b3J5IjpbMTY5MzIxNzAzNywxNDYxMTk4MzIyLDEzMT
+A5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4
+NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLT
+IxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYz
+NjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMi
+wtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LDU5NjkyNDM2XX0=
 -->
