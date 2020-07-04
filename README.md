@@ -38,7 +38,8 @@ It's important to segment our user base according to their capabilities, optimal
 ### Entry point and subsequent requests
 <p align="justify">
 
-The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use Google AMP and the [amp-install-serviceworker](https://amp.dev/documentation/examples/components/amp-install-serviceworker/) tag to preload our website layout and fill the cache. Subsequent request will query only the needed data, for example via a graphQL endpoint, and surgically update 
+The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use Google AMP and the [amp-install-serviceworker](https://amp.dev/documentation/examples/components/amp-install-serviceworker/) tag to preload our website layout and fill the cache. Subsequent request will query only the needed data, for example via a graphQL endpoint, and surgically update the DOM.
+Eventually the client won't need anym
 </p>
 
 ### Bonus: Pure functions and the cache
@@ -83,11 +84,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NzU3MTAwMCwxOTE2ODYxOTY5LDE1MT
-Q0MjQ3MDQsMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNzQ0ODc1
-OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3NywxND
-YxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2
-OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC
-0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEy
-NTk1XX0=
+eyJoaXN0b3J5IjpbLTIwNzQ5NzM0NzYsMTkxNjg2MTk2OSwxNT
+E0NDI0NzA0LDE0MTU4OTM1ODUsODM0NDAwMTkxLDEyMDc0NDg3
+NTksMTIzODc3NTgxOCwtMTUxMjg0NjI4Miw1NzMzNTY2NzcsMT
+Q2MTE5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIx
+NjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMS
+wtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIx
+MjU5NV19
 -->
