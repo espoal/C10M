@@ -39,7 +39,8 @@ document.on('event', async () => {
 ```
 <p align="justify">
 Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator so that we don't have to wait for the function to complete, instead we can serve the content as soon as it's ready, for example by loading the head tag as soon as possible we can start prefetching scripts, CSS and images. <br>
-In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because there might be multiple long requests, and we don't want to wait for all of them to complete before we can start rendering. The conciliate function is responsible for updating the state, maybe using a diffing algorithm, and then pass the result to the render function that can surgically update the chang 
+In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because there might be multiple long requests, and we don't want to wait for all of them to complete before we can start rendering. The conciliate function is responsible for updating the state, maybe using a diffing algorithm, and then pass the result to the render function that can surgically update the changed components.
+The render is itself an async iterator, so it can yield to the main thread between updates, even if they are the result of a single event, allowing for a 60 fps experience even on resource constrained devi 
 
 </p>
 
@@ -76,11 +77,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjg3NTIyMDUsLTE1MTI4NDYyODIsNT
-czMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5
-MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLT
-ExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5
-ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMT
-AsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00
-MzA3MTAwMDZdfQ==
+eyJoaXN0b3J5IjpbLTQyNTY4OTcwNiwtMTUxMjg0NjI4Miw1Nz
+MzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTky
+NCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMT
+E4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4
+MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMC
+wtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQz
+MDcxMDAwNl19
 -->
