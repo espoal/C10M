@@ -19,7 +19,8 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 ### Pure functions and the cache
 <p align="justify">
 Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components.  <br> 
-Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function
+Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function, compared to having to OOP where you have to patch the internal state of Objects, leading to many mistakes. <br>
+One could imagine 
 </p>
 
 ```js
@@ -59,10 +60,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTcwOTY3ODQsMTQ2MTE5ODMyMiwxMz
-EwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUy
-ODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC
-0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2
-MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1Mj
-IsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbNTM3NzM3Njk5LDE0NjExOTgzMjIsMTMxMD
+k5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3
+LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMj
+ExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2
+MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC
+0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
 -->
