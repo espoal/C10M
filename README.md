@@ -20,20 +20,22 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 <p align="justify">
 Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components.  <br> 
 Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function, compared to having to OOP where you have to patch the internal state of Objects, leading to many mistakes. <br>
-At a high level one could imagine such a flow: 
+At a high level one could imagine such a flow like this: 
 </p>
 
 ```js
+// render loop
 const render = async* state => {...}
 const eventHandler = async* (oldState, event) => {...}
 const conciliate = async* (oldState, newState) => {...}
 
-let state
+let state =
 
 document.on('event', async () => {
 	render(
-		conciliate(state, eventHandler(state, event)))
-
+		conciliate(state, 
+			eventHandler(state, event)
+		))
 })
 ```
 <p align="justify">
@@ -75,11 +77,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MjIxMjczMCw1NzMzNTY2NzcsMTQ2MT
-E5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkw
-LC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMz
-M5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5
-NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC
-0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5
-MjQzNl19
+eyJoaXN0b3J5IjpbLTExMTQwNDE3NzQsNTczMzU2Njc3LDE0Nj
+ExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5
+MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLT
+MzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1
+OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNS
+wtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2
+OTI0MzZdfQ==
 -->
