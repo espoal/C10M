@@ -51,8 +51,8 @@ The render loop could be something like:
 
 ```js 
 const render = async* state => {...}
-const eventHandler = async* (oldState, event) => {...}
-const conciliate = async* (oldState, newState) => {...}
+const eventHandler = async* (oldState, event) => {... yield newState}
+const conciliate = async* (oldState, newState) => {... yield diff}
 
 render(initialState) // this should be skipped by using SSR
 
@@ -84,11 +84,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgwOTA0MDM2LDE5NzM2NTIwODQsLTI1Nz
-gwMjI2NywxOTE2ODYxOTY5LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4
-NSw4MzQ0MDAxOTEsMTIwNzQ0ODc1OSwxMjM4Nzc1ODE4LC0xNT
-EyODQ2MjgyLDU3MzM1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUx
-MzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNj
-IwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5
-NzAyMV19
+eyJoaXN0b3J5IjpbLTY5MjI3MTY3MiwxOTczNjUyMDg0LC0yNT
+c4MDIyNjcsMTkxNjg2MTk2OSwxNTE0NDI0NzA0LDE0MTU4OTM1
+ODUsODM0NDAwMTkxLDEyMDc0NDg3NTksMTIzODc3NTgxOCwtMT
+UxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1
+MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMT
+YyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEw
+OTcwMjFdfQ==
 -->
