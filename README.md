@@ -26,10 +26,13 @@ At a high level one could imagine such a flow:
 ```js
 const render = async* state => {...}
 const eventHandler = async* (oldState, event) => {...}
-const conciliate = async* (newState, oldState) => {...}
+const conciliate = async* (oldState, newState) => {...}
 
-document.on('event', () => {
-	const newState = conciliate( 
+let state
+
+document.on('event', async () => {
+	render(
+		conciliate(state, eventHandler(state, event)))
 
 })
 ```
@@ -72,7 +75,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzcxNzUyMCw1NzMzNTY2NzcsMTQ2MT
+eyJoaXN0b3J5IjpbLTQ5MjIxMjczMCw1NzMzNTY2NzcsMTQ2MT
 E5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkw
 LC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMz
 M5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5
