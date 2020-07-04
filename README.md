@@ -22,7 +22,7 @@ We shall use pure functions
 ```js
 page = render(state)
 newState = conciliate(oldState, action)
-updates = diff(newSt
+updates = diff(newState, oldState)as
 ```
 
 ### Smart requests
@@ -55,10 +55,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MjE2ODI4NiwxMzEwOTk1MTM4LDU5ND
-AzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3
-NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOT
-E3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOCwtMTI4NTkw
-NjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2NTgzNT
-ksLTQzMDcxMDAwNiw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbLTEyMTY2NTA5MjEsMTMxMDk5NTEzOCw1OT
+QwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0
+NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjExMDk3MDIxLD
+kxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2MTgsLTEyODU5
+MDYwMTAsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC0xMDc0NjU4Mz
+U5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
 -->
