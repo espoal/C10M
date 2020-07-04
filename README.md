@@ -39,13 +39,15 @@ Hello
 ### Scaling
 #### Hybrid Cloud Approach
 hello
-#### Scaling 
+#### Scaling up
+hello
+#### Scaling out
 hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NzgwMjk3NSwxNjIwNzExNDc1LC0xMT
+eyJoaXN0b3J5IjpbLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMT
 g3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgx
 MjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC
 02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMw
