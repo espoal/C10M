@@ -37,8 +37,9 @@ It's important to segment our user base according to their capabilities, optimal
 
 ### Entry point and subsequent requests
 <p align="justify">
-The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use <a href="https://amp.dev/documentation/examples/components/amp-install-serviceworker/">Google AMP</a> tag to preload our website and fill the cache, leveraging the Google CDN. Subsequent request will query only the needed data, for example via a graphQL endpoint, and surgically update the DOM. Page will be rendered using locally stored components, skipping long HTML responses. <br>
-Eventually most of the client requests will end up with a HTTP 304 response, which are less than 200 bytes compressed, reducing considerably the load on the server. Modern browser can even sync the cache in the background, to deliver updates when the load is low.
+The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use <a href="https://amp.dev/documentation/examples/components/amp-install-serviceworker/">Google AMP</a> tag to preload our website and fill the cache, leveraging the Google CDN. <br>
+Subsequent request will query only the needed data, for example via a graphQL endpoint, and surgically update the DOM. Page will be rendered using locally stored components, skipping long HTML responses. <br>
+Eventually most of the client requests will end up with a HTTP 304 response, which are less than 200 bytes compressed, reducing considerably the load on the backend. Modern browser can even sync the cache in the background, to deliver cache updates when the load is low.
 </p>
 
 ### Bonus: Pure functions and the cache
@@ -83,11 +84,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTk0MzUxMDksMTk3MzY1MjA4NCwtMj
-U3ODAyMjY3LDE5MTY4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkz
-NTg1LDgzNDQwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLT
-E1MTI4NDYyODIsNTczMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5
-NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3LD
-E2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjEx
-MDk3MDIxXX0=
+eyJoaXN0b3J5IjpbNTgwOTA0MDM2LDE5NzM2NTIwODQsLTI1Nz
+gwMjI2NywxOTE2ODYxOTY5LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4
+NSw4MzQ0MDAxOTEsMTIwNzQ0ODc1OSwxMjM4Nzc1ODE4LC0xNT
+EyODQ2MjgyLDU3MzM1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUx
+MzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNj
+IwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5
+NzAyMV19
 -->
