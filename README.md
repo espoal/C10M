@@ -8,7 +8,8 @@ How to handle 10 Million concurrent users using one single commodity server
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 ### Hybrid Cloud Approach
 hello
-### Unix Domain sockets vs TCP/UDP IP protocol
+### Optimizations
+#### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODYwNDQ2Miw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbLTQzMDcxMDAwNiw1OTY5MjQzNl19
 -->
