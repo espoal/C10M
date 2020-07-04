@@ -15,16 +15,16 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
  
 ![Flow diagram of a fetch event](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
 
-Additionally, offline functionalit
+Additionally, with this flow offline functionality is trivial.
 </p> 
 
 ### User segmentation
 
-It's important to segment our user base according to their capabilities
+It's important to segment our user base according to their capabilities, by sniffing the request heade
 
  - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 35% of the market.
  - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab communication resource sharing can be achieved using IndexedDB.
- - No Javascript:
+ - No Javascript: In case 
  
  Other features useful to segment the user base:
  
@@ -80,11 +80,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQxNzE4NzQsMTIzODc3NTgxOCwtMT
-UxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1
-MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMT
-YyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEw
-OTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOC
-wtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEw
-NzQ2NTgzNTldfQ==
+eyJoaXN0b3J5IjpbMTc0MzY4ODYxOSwxMjM4Nzc1ODE4LC0xNT
+EyODQ2MjgyLDU3MzM1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUx
+MzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNj
+IwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5
+NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC
+0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3
+NDY1ODM1OV19
 -->
