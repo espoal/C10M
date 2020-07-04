@@ -75,7 +75,7 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 #### Hybrid Cloud Approach
 <p align="justify">
 One common question that often comes up when architecting the backend: Should we use bare metal servers or a PaaS provider? <br>
-A PaaS provider like AWS can significantly reduce time to market, tie the cost to actual consumption and allow to delegate a large portion of system maintenance. On the other hand this comes at a high price point, and a skilled linux engineer is still required to manage everything. <br>
+A PaaS provider like AWS can significantly reduce time to market, tie the cost to actual usage and allow to delegate a large portion of system maintenance. On the other hand this comes at a high price point, and a skilled linux engineer is still required to manage everything. <br>
 A good compromise is to use a hybrid cloud approach, where we identify a baseline load to be served from bare metal servers, while PaaS is used to meet load spikes, which usually are predictable:
 </p> 
 
@@ -91,7 +91,7 @@ hello
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTg2NDU2NywtMjAyOTU5NjU3NywtOD
+eyJoaXN0b3J5IjpbMTM3MjU0ODQ4MywtMjAyOTU5NjU3NywtOD
 cwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5MTc3NCwtNTYwOTY3
 OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MT
 Y4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5
