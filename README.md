@@ -25,13 +25,13 @@ It's important to segment our user base according to their capabilities, optimal
 
  - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 33% of the market.
  - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab communication resource sharing can be achieved using IndexedDB. Roughly 60% of the market.
- - No Javascript: In case a browser doesn't fall in the previous two categories, we can provide a JS-less experience, with pages rendered server-side. A lot of functionalities usually achieved through JS can be done in [CSS instead](https://github.com/you-dont-need/You-Dont-Need-JavaScript), making the page much faster for every user. 
+ - No Javascript: In case a browser doesn't fall in the previous two categories, we can provide a JS-less experience, with pages rendered server-side. A lot of functionalities usually achieved through JS can be done in [CSS instead](https://github.com/you-dont-need/You-Dont-Need-JavaScript), making the page much faster for every user.  This work can also be used to bootstrap a Google AMP implementation.
  
- Other features useful to segment the user base:
+ Other features useful to segment the user base are:
  
  - ECMAScript support: Usually developers use Babel to compile the code to the minimum common denominator, thus creating huge and bloated Javascript files.
  - Compression support: Brotli is a new compression algorithm, which is much better. 
- - Media support: Even though the web seems to be converging toward WebP, it's useful the differentiate media support and serve only the best format.
+ - Media support: Even though the web seems to be converging toward WebP, it's useful the differentiate media support and serve only the best format at the optimal resolution.
 
 </p>
 
@@ -65,7 +65,7 @@ document.on('event', async event => {
 ```
 <p align="justify">
 Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator so that we don't have to wait for the function to complete, instead we can serve the content as soon as it's ready, for example by loading the head tag as soon as possible we can start prefetching scripts, CSS and images. <br>
-In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because there might be multiple long requests, and we don't want to wait for all of them to complete before we can start rendering. The conciliate function is responsible for updating the state, maybe using a diffing algorithm, and then pass the result to the render function that can surgically update the changed components.
+In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because there might be multiple long requests, and we don't want to wait for all of them to complete before we can start rendering. The conciliate function is responsible for updating the state, maybe using a diffing algorithm, and then pass the result to the render function that can surgically update the changed components. <br>
 The render is itself an async iterator, so it can yield to the main thread between updates, even if they are the result of a single event, allowing for a 60 fps experience even on resource constrained devices. 
 </p>
 
@@ -91,11 +91,11 @@ hello
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDYwNjgwNzYsLTIwMjk1OTY1NzcsLT
-g3MDk5ODgzOCwyNDAzOTg0NTUsLTIwMzM5OTE3NzQsLTU2MDk2
-NzksMjc1MzczMTM0LDE5NzM2NTIwODQsLTI1NzgwMjI2NywxOT
-E2ODYxOTY5LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4NSw4MzQ0MDAx
-OTEsMTIwNzQ0ODc1OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLD
-U3MzM1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5
-OTI0XX0=
+eyJoaXN0b3J5IjpbLTY2OTg2NDU2NywtMjAyOTU5NjU3NywtOD
+cwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5MTc3NCwtNTYwOTY3
+OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MT
+Y4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5
+MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNT
+czMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5
+MjRdfQ==
 -->
