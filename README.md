@@ -8,8 +8,8 @@ In order to achieve our goals we'll have to rethink how the clients will interac
 ### User segmentation
 Hello
 
- - Shared Worker Browsers: 
- - Service Worker Browsers:
+ - Shared Worker:  Modern blink-based browsers, 
+ - Service Worker: Webkit powered browsers, older browsers 
  - No Javascript:
  
  Other features useful to segment the user base:
@@ -24,7 +24,7 @@ hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyNjMzNTk4LC0xMjg1OTA2MDEwLC02Mz
-gyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMwNzEw
-MDA2LDU5NjkyNDM2XX0=
+eyJoaXN0b3J5IjpbLTEwMzAxMjc2OTIsLTEyODU5MDYwMTAsLT
+YzODIxNjkyNSwtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3
+MTAwMDYsNTk2OTI0MzZdfQ==
 -->
