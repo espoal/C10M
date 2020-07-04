@@ -11,8 +11,11 @@ In order to achieve our goals we'll have to rethink how the clients will interac
 <p align="justify">
 The traditional way to scale web services is to use load balancers and caches. Typically once a single server can't handle anymore the peak load, the domain will be rerouted to a service whose sole purpose is to spread the load, locally or over the network. Common examples are Nginx in a reverse proxy configuration, HAproxy, or dedicated hardware solutions.  
 
-My idea is to move the load balancer inside the client, hence the *smart client* name, exploiting Service Worker capabilities to patch fetch requests and reroute them to cache, if possible, or to the best endpoint according to latency and load.  Here's a flow diagram of how requests are handled: </p>
+My idea is to move the load balancer inside the client, hence the *smart client* name, exploiting Service Worker capabilities to patch fetch requests and reroute them to cache, if possible, or to the best endpoint according to latency and load. Here's a flow diagram of how requests are handled:  
+ 
 ![Flow diagram of a fetch event](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
+</p> 
+
 ### Pure functions and the cache
 We shall use pure functions
 
@@ -39,9 +42,9 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4OTk2MDg1NSwtMTE4NzQxMTYwMSwtMz
-M5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5
-NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC
-0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5
-MjQzNl19
+eyJoaXN0b3J5IjpbLTE0MDE0NjU4OTksLTExODc0MTE2MDEsLT
+MzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1
+OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNS
+wtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2
+OTI0MzZdfQ==
 -->
