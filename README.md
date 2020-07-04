@@ -24,9 +24,12 @@ At a high level one could imagine such a flow:
 </p>
 
 ```js
-render = async* state => {...}
-eventHandler = async* (oldState, event) => {...}
-updates = async* conciliate(newState, oldState)
+const render = async* state => {...}
+const eventHandler = async* (oldState, event) => {...}
+const conciliate = async* (newState, oldState) => {...}
+
+document.on('event', 
+	conciliate
 ```
 <p align="justify">
 Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator because we don't have to wait for the function to complete, instead it's beneficial to serve the content as soon as it's ready, for example by loading the head tag as soon as possible we can start prefetching scripts, CSS and images. <br>
@@ -67,11 +70,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY3MDI1NjMsNTczMzU2Njc3LDE0NjExOT
-gzMjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwt
-ODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOT
-gzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUs
-LTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMj
-AyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0
-MzZdfQ==
+eyJoaXN0b3J5IjpbNTI4ODA1OTgyLDU3MzM1NjY3NywxNDYxMT
+k4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAs
+LTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMz
+k4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1
+LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLT
+IwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LDU5Njky
+NDM2XX0=
 -->
