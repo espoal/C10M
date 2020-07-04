@@ -23,13 +23,14 @@ We shall use pure functions
 Don't request everything, read as stream
 ### User segmentation
 
-Hello
+It's important 
 
  - Shared Worker:  Browsers that support sharing threads across tabs. Modern blink-based browsers, 
- - Service Worker: Browsers that  Webkit powered browsers, older browsers 
+ - Service Worker: Browsers that support patching fetch requests inside a service worker.  Webkit powered browsers, older bbrowsers 
  - No Javascript:
  
  Other features useful to segment the user base:
+ - ECMAScript support:
  - Compression support:
  - Media support:
 
@@ -47,9 +48,9 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMT
-g3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgx
-MjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC
-02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMw
-NzEwMDA2LDU5NjkyNDM2XX0=
+eyJoaXN0b3J5IjpbLTEyODMwODc2MiwtODQwNzk1Mjg3LDE2Mj
+A3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjExMDk3
+MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2MTgsLT
+EyODU5MDYwMTAsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC0xMDc0
+NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
 -->
