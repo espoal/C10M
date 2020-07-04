@@ -30,6 +30,7 @@ It's important
  - No Javascript:
  
  Other features useful to segment the user base:
+ 
  - ECMAScript support:
  - Compression support:
  - Media support:
@@ -48,7 +49,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODMwODc2MiwtODQwNzk1Mjg3LDE2Mj
+eyJoaXN0b3J5IjpbMTQ5ODkyMTY5MCwtODQwNzk1Mjg3LDE2Mj
 A3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjExMDk3
 MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2MTgsLT
 EyODU5MDYwMTAsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC0xMDc0
