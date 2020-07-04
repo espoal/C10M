@@ -81,7 +81,7 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 
 This is a unit of our backend, or a pod in Kubernetes term.  It's a collection of containers that can be powered up or down according to our needs. 
 The main container is the HTTP Server, which handle all incoming requests. It can use Node.js if we prioritize rapid prototyping, and eventually switch to libH2O and mRuby for performance. It's responsible for serving static assets, and to create HTTP responses. Each request is first checked against a Redis cache, very much like on the client side, so that if it is possible the microservices are not queried.
-With this design microservices don't handle the HTTP protocol, but instead use Unix Domain Socket to stream responses 
+With this design microservices don't handle the HTTP protocol, so they can be written  . We exploit the concept of locality by using Unix Domain Socket, which provide a 25-50% boost in performance and latency c  
 
 
 ### Load considerations
@@ -108,7 +108,7 @@ Let's see if we can reach our goal of 10 M concurrent users
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTk0OTE0MTcsNDM5NTE0NjA2LDIxMz
+eyJoaXN0b3J5IjpbLTE5Mzc3NDQ5MDQsNDM5NTE0NjA2LDIxMz
 c1NjUwODksLTExNjg5NjEyNzIsMTM3MjU0ODQ4MywtMjAyOTU5
 NjU3NywtODcwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5MTc3NC
 wtNTYwOTY3OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMjU3ODAy
