@@ -15,7 +15,7 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
  
 ![Flow diagram of a fetch event](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
 
-Additionally, with this flow offline functionality is trivial.
+Additionally, with this flow adding offline functionality is trivial.
 </p> 
 
 ### User segmentation
@@ -37,14 +37,19 @@ It's important to segment our user base according to their capabilities, optimal
 
 ### Entry point and subsequent requests
 <p align="justify">
-The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use <a href="https://amp.dev/documentation/examples/components/amp-install-serviceworker/">Google AMP</a> tag to preload our website and fill the cache, leveraging the Google CDN.   <br>
-Subsequent request will query only the needed data, for example via a graphQL endpoint, and surgically update the DOM. Page will be rendered using locally stored components, skipping long HTML responses. <br>
+The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use <a href="https://amp.dev/documentation/examples/components/amp-install-serviceworker/">Google AMP</a> tag to preload our website and fill the cache, leveraging the Google CDN.  
+ <br>
+ 
+Subsequent request will query only the needed data, for example via a graphQL endpoint, and surgically update the DOM. Page will be rendered using locally stored components, skipping long HTML responses.   <br>
+
 Eventually most of the client requests will end up with a HTTP 304 response, which are less than 200 bytes compressed, reducing considerably the load on the backend. Modern browser can even sync the cache in the background, to deliver cache updates when the load is low.
 </p>
 
 ### Bonus: Pure functions and the cache
 <p align="justify">
-Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components.  <br> 
+Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components. 
+ <br> 
+ 
 Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function, compared to having to OOP where you have to patch the internal state of Objects, leading to many mistakes. <br>
 The render loop could be something like: 
 </p>
@@ -65,7 +70,9 @@ document.on('event', async event => {
 ```
 <p align="justify">
 Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator so that we don't have to wait for the function to complete, instead we can serve the content as soon as it's ready, for example by loading the head tag as soon as possible we can start prefetching scripts, CSS and images. <br>
+
 In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because there might be multiple long requests, and we don't want to wait for all of them to complete before we can start rendering. The conciliate function is responsible for updating the state, maybe using a diffing algorithm, and then pass the result to the render function that can surgically update the changed components. <br>
+
 The render is itself an async iterator, so it can yield to the main thread between updates, even if they are the result of a single event, allowing for a 60 fps experience even on resource constrained devices. 
 </p>
 
@@ -75,7 +82,9 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 #### Hybrid Cloud Approach
 <p align="justify">
 One common question that often comes up when architecting the backend: Should we use bare metal servers or a PaaS provider? <br>
+
 A PaaS provider like AWS can significantly reduce time to market, tie the cost to actual usage and allow to delegate a large portion of system maintenance. On the other hand this comes at a high price point, and a skilled linux engineer is still required to manage everything. <br>
+
 A good compromise is to use a hybrid cloud approach, where we identify a baseline load to be served from bare metal servers, while PaaS is used to meet load spikes, which usually are predictable:
 </p> 
 
@@ -83,6 +92,7 @@ A good compromise is to use a hybrid cloud approach, where we identify a baselin
 #### Scaling up or out?
 <p align="justify">
 When I started working on scaling backends, around 7 years ago, the typical server specs were: 4 core / 8 threads, 250-500 mbit/s bandwidth, 32 GB of RAM, 2x SATA SSD. The x86 market  has stagnated a bit in the meanwhile, with moderate IPC increases year over year and a stable core count. Thankfully AMD recently introduced a competitive architecture, and one now can find hexa-core and octa-core servers in the same price bracket. The average NIC today is 1 Gigabit/s, with higher capacity available for a premium. SSDs on the other hand made huge leaps, especially with the switch to PCIe interfaces.<br> 
+
 In general it's rarely worthwhile to scale up, as hardware prices grow much faster than capacity. If one has the choice he should always choose to scale out instead, leaving scaling up to yearly server updates that leverage the normal market evolution. 
 </p>
 
@@ -91,7 +101,7 @@ hello
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE0MDI2ODUsMTM3MjU0ODQ4MywtMj
+eyJoaXN0b3J5IjpbLTExNjg5NjEyNzIsMTM3MjU0ODQ4MywtMj
 AyOTU5NjU3NywtODcwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5
 MTc3NCwtNTYwOTY3OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMj
 U3ODAyMjY3LDE5MTY4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkz
