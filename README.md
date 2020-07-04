@@ -45,7 +45,7 @@ Eventually most of the client requests will end up with a HTTP 304 response, whi
 <p align="justify">
 Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components.  <br> 
 Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function, compared to having to OOP where you have to patch the internal state of Objects, leading to many mistakes. <br>
-At a high level one the render loop could be: 
+The render loop could be something like: 
 </p>
 
 ```js 
@@ -83,11 +83,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NzgwMjI2NywxOTE2ODYxOTY5LDE1MT
-Q0MjQ3MDQsMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNzQ0ODc1
-OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3NywxND
-YxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2
-OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC
-0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEy
-NTk1XX0=
+eyJoaXN0b3J5IjpbMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MT
+Y4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5
+MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNT
+czMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5
+MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLT
+ExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5
+ODEyM119
 -->
