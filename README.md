@@ -76,16 +76,14 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 ![Sample load](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/load_sample.png)
 
 One common question that often comes up when architecting the backend: Should we use bare metal servers or a PaaS provider?
-A PaaS provider like AWS can significantly reduce time to market, 
+A PaaS provider like AWS can significantly reduce time to market 
 #### Scaling up
 hello
 #### Scaling out
 hello
-### Optimizations
-#### Unix Domain sockets vs TCP/IP protocol
-#### HTTP/3
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTE4NDA1MCwtNTYwOTY3OSwyNzUzNz
+eyJoaXN0b3J5IjpbMTY3MTA0MzIyNSwtNTYwOTY3OSwyNzUzNz
 MxMzQsMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MTY4NjE5Njks
 MTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5MSwxMjA3ND
 Q4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNTczMzU2Njc3
