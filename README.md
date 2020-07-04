@@ -16,6 +16,26 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 ![Flow diagram of a fetch event](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
 </p> 
 
+### Entry point and subsequent requests
+
+Don't request everything, read as stream
+
+### User segmentation
+
+It's important 
+
+ - Shared Worker:  Browsers that support sharing threads across tabs. Modern blink-based browsers, 
+ - Service Worker: Browsers that support patching fetch requests inside a service worker.  Webkit powered browsers, older bbrowsers 
+ - No Javascript:
+ 
+ Other features useful to segment the user base:
+ 
+ - ECMAScript support:
+ - Compression support:
+ - Media support:
+
+hello
+
 ### Pure functions and the cache
 <p align="justify">
 Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components.  <br> 
@@ -40,29 +60,8 @@ document.on('event', async () => {
 <p align="justify">
 Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator so that we don't have to wait for the function to complete, instead we can serve the content as soon as it's ready, for example by loading the head tag as soon as possible we can start prefetching scripts, CSS and images. <br>
 In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because there might be multiple long requests, and we don't want to wait for all of them to complete before we can start rendering. The conciliate function is responsible for updating the state, maybe using a diffing algorithm, and then pass the result to the render function that can surgically update the changed components.
-The render is itself an async iterator, so it can yield to the main thread between updates, even if they are the result of a single event, allowing for a 60 fps experience even on resource constrained devi 
-
+The render is itself an async iterator, so it can yield to the main thread between updates, even if they are the result of a single event, allowing for a 60 fps experience even on resource constrained devices. 
 </p>
-
-### Entry point and subsequent requests
-
-Don't request everything, read as stream
-
-### User segmentation
-
-It's important 
-
- - Shared Worker:  Browsers that support sharing threads across tabs. Modern blink-based browsers, 
- - Service Worker: Browsers that support patching fetch requests inside a service worker.  Webkit powered browsers, older bbrowsers 
- - No Javascript:
- 
- Other features useful to segment the user base:
- 
- - ECMAScript support:
- - Compression support:
- - Media support:
-
-hello
 
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
@@ -77,7 +76,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTY4OTcwNiwtMTUxMjg0NjI4Miw1Nz
+eyJoaXN0b3J5IjpbMTcxNTQ3OTAxNSwtMTUxMjg0NjI4Miw1Nz
 MzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTky
 NCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMT
 E4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4
