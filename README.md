@@ -7,7 +7,7 @@ In order to achieve our goals we'll have to rethink how the clients will interac
 ## Smart Client
 ### Fetch patching and HTTP 304
 
-The key 
+The traditional way to scale web services is to use load balancers and caches. Typically 
 
 ### User segmentation
 
@@ -30,7 +30,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTc0MzUzNywtMjExODU2MzYxOCwtMT
-I4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2
-NTgzNTksLTQzMDcxMDAwNiw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMj
+g1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1
+ODM1OSwtNDMwNzEwMDA2LDU5NjkyNDM2XX0=
 -->
