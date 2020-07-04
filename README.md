@@ -7,7 +7,7 @@ In order to achieve our goals we'll have to rethink how the clients will interac
 ## Smart Client
 ### Fetch patching and HTTP 304
 
-The traditional way to scale web services is to use load balancers and caches. Typically 
+The traditional way to scale web services is to use load balancers and caches. Typically once a single server can't handle anymore the peak load, the domain will be rerouted to a service whose sole purpose is 
 
 ### User segmentation
 
@@ -30,7 +30,8 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMj
-g1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1
-ODM1OSwtNDMwNzEwMDA2LDU5NjkyNDM2XX0=
+eyJoaXN0b3J5IjpbLTExMjUwMTA4NzYsLTYxMjEyNTk1LC0yMT
+E4NTYzNjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMx
+MzUyMiwtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LDU5NjkyNDM2XX
+0=
 -->
