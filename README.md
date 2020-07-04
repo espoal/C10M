@@ -14,14 +14,16 @@ The traditional way to scale web services is to use load-balancers and caches. T
 My idea is to move the load-balancer inside the client, hence the *smart client* name, exploiting Service Worker capabilities to patch fetch requests and reroute them to cache, if possible, or to the best endpoint according to latency and load. Here's a flow diagram of how requests are handled:  
  
 ![Flow diagram of a fetch event](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
+
+Additionally, offline functionalit
 </p> 
 
 ### User segmentation
 
-It's important to 
+It's important to segment our user base according to their capabilities
 
  - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 35% of the market.
- - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab resource sharing can be achieved using IndexedDB.
+ - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab communication resource sharing can be achieved using IndexedDB.
  - No Javascript:
  
  Other features useful to segment the user base:
@@ -78,7 +80,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTY2MTM2NDksMTIzODc3NTgxOCwtMT
+eyJoaXN0b3J5IjpbLTE1NDQxNzE4NzQsMTIzODc3NTgxOCwtMT
 UxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1
 MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMT
 YyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEw
