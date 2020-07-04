@@ -18,10 +18,10 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 
 ### User segmentation
 
-It's important 
+It's important to 
 
- - Shared Worker:  Browsers that support sharing threads across tabs. Modern blink-based browsers, 
- - Service Worker: Browsers that support patching fetch requests inside a service worker.  Webkit powered browsers, older bbrowsers 
+ - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 35% of the market.
+ - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab resource sharing can be achieved using IndexedDB.
  - No Javascript:
  
  Other features useful to segment the user base:
@@ -78,11 +78,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODc3NTgxOCwtMTUxMjg0NjI4Miw1Nz
-MzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTky
-NCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMT
-E4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4
-MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMC
-wtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQz
-MDcxMDAwNl19
+eyJoaXN0b3J5IjpbLTE5MTY2MTM2NDksMTIzODc3NTgxOCwtMT
+UxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1
+MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMT
+YyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEw
+OTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOC
+wtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEw
+NzQ2NTgzNTldfQ==
 -->
