@@ -23,17 +23,14 @@ Another advantage of pure functions is that they pair very well with caches. Giv
 At a high level one the render loop could be: 
 </p>
 
-```js
+```js 
 const render = async* state => {...}
 const eventHandler = async* (oldState, event) => {...}
 const conciliate = async* (oldState, newState) => {...}
 
-let state, newState
-
-render(initialState)
+render(initialState) // this should be skipped by using SSR
 
 document.on('event', async () => {
-	newState = con
 	render(
 		conciliate(state, 
 			eventHandler(state, event)
@@ -79,7 +76,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgwNjA1MzU1LC0xNTEyODQ2MjgyLDU3Mz
+eyJoaXN0b3J5IjpbNDU5NzcxNjk3LC0xNTEyODQ2MjgyLDU3Mz
 M1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0
 LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMT
 g3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgx
