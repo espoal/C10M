@@ -5,7 +5,7 @@ How to handle 10 Million concurrent users using one single commodity server
 ### User segmentation
 Hello
 
- - Modern Chrome: 
+ - Shared Worker Browsers: 
  - Service Worker Browsers:
  - No Javascript:
  this
@@ -18,6 +18,6 @@ hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OT
-Y5MjQzNl19
+eyJoaXN0b3J5IjpbLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtND
+MwNzEwMDA2LDU5NjkyNDM2XX0=
 -->
