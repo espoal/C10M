@@ -28,7 +28,10 @@ page = async* render(state)
 newState = async* eventHandler(oldState, event)
 updates = async* conciliate(newState, oldState)
 ```
-Since `render` is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator because we don't have to wait for the function to complete, instead it's beneficial to serve the content as soon as it's ready, for example by loading the `head` tag as soon as possible we can start prefetching scripts, CSS and images.
+<p align="justify">
+Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator because we don't have to wait for the function to complete, instead it's beneficial to serve the content as soon as it's ready, for example by loading the head tag as soon as possible we can start prefetching scripts, CSS and images, without having to. <br>
+
+</p>
 
 ### Entry point and subsequent requests
 
@@ -63,7 +66,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTMzODc2MywxNDYxMTk4MzIyLDEzMT
+eyJoaXN0b3J5IjpbMTkzNjY3NTY5NiwxNDYxMTk4MzIyLDEzMT
 A5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4
 NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLT
 IxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYz
