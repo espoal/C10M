@@ -11,7 +11,10 @@ Hello
  - Shared Worker Browsers: 
  - Service Worker Browsers:
  - No Javascript:
- this
+ 
+ Other features useful to segment the user base:
+ - Compression support:
+ - Media support:
 
 ### Fetch patching and HTTP 304
 ## Backend Architecture
@@ -21,7 +24,7 @@ hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ2NDg4MzcwLC0xMjg1OTA2MDEwLC02Mz
+eyJoaXN0b3J5IjpbOTgyNjMzNTk4LC0xMjg1OTA2MDEwLC02Mz
 gyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMwNzEw
 MDA2LDU5NjkyNDM2XX0=
 -->
