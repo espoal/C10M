@@ -79,18 +79,19 @@ One common question that often comes up when architecting the backend: Should we
 A PaaS provider like AWS can significantly reduce time to market 
 #### Scaling up
 <p align="justify">
-When I started working on scaling backends, around 7 years ago, the typical server specs were: 4 core / 8 threads, 250-500 mbit/s bandwidth, 32 GB of RAM, 2x SATA SSD. The x86 market  has stagnated a bit in the meanwhile, with moderate IPC increases year over year and a stable core count. Thankfully AMD recently introduced a competitive architecture, and one now can find hexa-core and octa-core servers for the same price.
-In general rarely it's worthwhile to scale up, as prices grow faster than capacity. If one has the choice he should always choose to scale out instead, leaving scaling up to yearly server updates  
+When I started working on scaling backends, around 7 years ago, the typical server specs were: 4 core / 8 threads, 250-500 mbit/s bandwidth, 32 GB of RAM, 2x SATA SSD. The x86 market  has stagnated a bit in the meanwhile, with moderate IPC increases year over year and a stable core count. Thankfully AMD recently introduced a competitive architecture, and one now can find hexa-core and octa-core servers in the same price bracket. <br>
+In general rarely it's worthwhile to scale up, as prices grow much faster than capacity. If one has the choice he should always choose to scale out instead, leaving scaling up to yearly server updates that leverage the normal market evolution. 
 </p>
+
 #### Scaling out
 hello
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzc4Nzk4NiwtNTYwOTY3OSwyNzUzNz
-MxMzQsMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MTY4NjE5Njks
-MTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5MSwxMjA3ND
-Q4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNTczMzU2Njc3
-LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5OD
-kyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2
-MDFdfQ==
+eyJoaXN0b3J5IjpbLTIwMzM5OTE3NzQsLTU2MDk2NzksMjc1Mz
+czMTM0LDE5NzM2NTIwODQsLTI1NzgwMjI2NywxOTE2ODYxOTY5
+LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNz
+Q0ODc1OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3
+NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OT
+g5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDEx
+NjAxXX0=
 -->
