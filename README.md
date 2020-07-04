@@ -38,11 +38,12 @@ Hello
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 ### Hybrid Cloud Approach
 hello
+####
 ### Optimizations
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTUwNjUyOSwtMTE4NzQxMTYwMSwtMz
+eyJoaXN0b3J5IjpbMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMz
 M5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5
 NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC
 0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5
