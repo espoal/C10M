@@ -37,7 +37,7 @@ It's important to segment our user base according to their capabilities, optimal
 
 ### Entry point and subsequent requests
 <p align="justify">
-The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use <a href="https://amp.dev/documentation/examples/components/amp-install-serviceworker/">Google AMP</a> tag to preload our website and fill the cache, leveraging the Google CDN. <br>
+The first time a user visits our website the client cache will be empty, and we will have to serve a big payload containing a SSR version of the page and all the assets. We could use <a href="https://amp.dev/documentation/examples/components/amp-install-serviceworker/">Google AMP</a> tag to preload our website and fill the cache, leveraging the Google CDN.   <br>
 Subsequent request will query only the needed data, for example via a graphQL endpoint, and surgically update the DOM. Page will be rendered using locally stored components, skipping long HTML responses. <br>
 Eventually most of the client requests will end up with a HTTP 304 response, which are less than 200 bytes compressed, reducing considerably the load on the backend. Modern browser can even sync the cache in the background, to deliver cache updates when the load is low.
 </p>
@@ -91,11 +91,11 @@ hello
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjU0ODQ4MywtMjAyOTU5NjU3NywtOD
-cwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5MTc3NCwtNTYwOTY3
-OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MT
-Y4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5
-MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNT
-czMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5
-MjRdfQ==
+eyJoaXN0b3J5IjpbLTE3MDE0MDI2ODUsMTM3MjU0ODQ4MywtMj
+AyOTU5NjU3NywtODcwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5
+MTc3NCwtNTYwOTY3OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMj
+U3ODAyMjY3LDE5MTY4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkz
+NTg1LDgzNDQwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLT
+E1MTI4NDYyODIsNTczMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5
+NTEzOF19
 -->
