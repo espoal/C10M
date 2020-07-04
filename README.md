@@ -24,7 +24,7 @@ Another advantage of pure functions is that they pair very well with caches. Giv
 
 ```js
 page = async* render(state)
-newState = async eventHandler(oldState, event)
+newState = async* eventHandler(oldState, event)
 updates = async* conciliate(newState, oldState)
 ```
 
@@ -59,7 +59,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTA3NzQ5NTQsMTQ2MTE5ODMyMiwxMz
+eyJoaXN0b3J5IjpbLTE5OTcwOTY3ODQsMTQ2MTE5ODMyMiwxMz
 EwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUy
 ODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC
 0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2
