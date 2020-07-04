@@ -71,7 +71,7 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 ### Load considerations
-
+![Sample load](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/load_sample.png)
 ### Scaling
 #### Hybrid Cloud Approach
 hello
@@ -83,11 +83,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM0NDAwMTkxLDEyMDc0NDg3NTksMTIzOD
-c3NTgxOCwtMTUxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMy
-MiwxMzEwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04ND
-A3OTUyODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1
-MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMj
-ExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIz
-MTM1MjJdfQ==
+eyJoaXN0b3J5IjpbMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNz
+Q0ODc1OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3
+NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OT
+g5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDEx
+NjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLT
+YxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC02Mzgy
+MTY5MjVdfQ==
 -->
