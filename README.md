@@ -19,6 +19,11 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 ### Pure functions and the cache
 We shall use pure functions
 
+```
+page = f(state)
+newState = f(state,action)
+```
+
 ### Smart requests
 Don't request everything, read as stream
 ### User segmentation
@@ -49,10 +54,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MD
-c5NTI4NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUz
-MjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMT
-E4NTYzNjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMx
-MzUyMiwtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LDU5NjkyNDM2XX
-0=
+eyJoaXN0b3J5IjpbMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5OD
+kyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2
+MDEsLTMzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNj
+EyMTI1OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIx
+NjkyNSwtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMD
+YsNTk2OTI0MzZdfQ==
 -->
