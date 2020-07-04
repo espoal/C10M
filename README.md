@@ -80,17 +80,18 @@ A PaaS provider like AWS can significantly reduce time to market
 #### Scaling up or out?
 <p align="justify">
 When I started working on scaling backends, around 7 years ago, the typical server specs were: 4 core / 8 threads, 250-500 mbit/s bandwidth, 32 GB of RAM, 2x SATA SSD. The x86 market  has stagnated a bit in the meanwhile, with moderate IPC increases year over year and a stable core count. Thankfully AMD recently introduced a competitive architecture, and one now can find hexa-core and octa-core servers in the same price bracket. <br>
+The average NIC today is 1 Gigabit/<br> 
 In general it's rarely worthwhile to scale up, as hardware prices grow much faster than capacity. If one has the choice he should always choose to scale out instead, leaving scaling up to yearly server updates that leverage the normal market evolution. 
 </p>
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQwMzk4NDU1LC0yMDMzOTkxNzc0LC01Nj
-A5Njc5LDI3NTM3MzEzNCwxOTczNjUyMDg0LC0yNTc4MDIyNjcs
-MTkxNjg2MTk2OSwxNTE0NDI0NzA0LDE0MTU4OTM1ODUsODM0ND
-AwMTkxLDEyMDc0NDg3NTksMTIzODc3NTgxOCwtMTUxMjg0NjI4
-Miw1NzMzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1MTM4LDU5ND
-AzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3
-NV19
+eyJoaXN0b3J5IjpbMzk3MDQ4MzE3LDI0MDM5ODQ1NSwtMjAzMz
+k5MTc3NCwtNTYwOTY3OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwt
+MjU3ODAyMjY3LDE5MTY4NjE5NjksMTUxNDQyNDcwNCwxNDE1OD
+kzNTg1LDgzNDQwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgs
+LTE1MTI4NDYyODIsNTczMzU2Njc3LDE0NjExOTgzMjIsMTMxMD
+k5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3
+XX0=
 -->
