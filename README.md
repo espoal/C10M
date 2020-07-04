@@ -28,9 +28,12 @@ const render = async* state => {...}
 const eventHandler = async* (oldState, event) => {...}
 const conciliate = async* (oldState, newState) => {...}
 
+let state, newState
+
 render(initialState)
 
 document.on('event', async () => {
+	newState = con
 	render(
 		conciliate(state, 
 			eventHandler(state, event)
@@ -76,11 +79,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTI4NDYyODIsNTczMzU2Njc3LDE0Nj
-ExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5
-MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLT
-MzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1
-OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNS
-wtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2
-OTI0MzZdfQ==
+eyJoaXN0b3J5IjpbODgwNjA1MzU1LC0xNTEyODQ2MjgyLDU3Mz
+M1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0
+LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMT
+g3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgx
+MjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC
+02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMw
+NzEwMDA2XX0=
 -->
