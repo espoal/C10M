@@ -20,8 +20,9 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 We shall use pure functions
 
 ```js
-page = f(state)
-const newState = f(state,action)
+page = render(state)
+newState = conciliate(oldState, action)
+updates = diff(newSt
 ```
 
 ### Smart requests
@@ -54,7 +55,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MzYxMTQ0MiwxMzEwOTk1MTM4LDU5ND
+eyJoaXN0b3J5IjpbLTY3MjE2ODI4NiwxMzEwOTk1MTM4LDU5ND
 AzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3
 NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOT
 E3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOCwtMTI4NTkw
