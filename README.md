@@ -13,7 +13,7 @@ Hello
  - No Javascript:
  this
 
-### Fetch patching
+### Fetch patching and HTTP 304
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 ### Hybrid Cloud Approach
@@ -21,7 +21,7 @@ hello
 ### Optimizations
 #### Unix Domain sockets vs TCP/UDP IP protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMj
-AyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0
-MzZdfQ==
+eyJoaXN0b3J5IjpbLTk5NTM4Nzk4OCwtMTI4NTkwNjAxMCwtNj
+M4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQzMDcx
+MDAwNiw1OTY5MjQzNl19
 -->
