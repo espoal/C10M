@@ -29,8 +29,10 @@ newState = async* eventHandler(oldState, event)
 updates = async* conciliate(newState, oldState)
 ```
 
-### Entry point anSmart requests
+### Entry point and subsequent requests
+
 Don't request everything, read as stream
+
 ### User segmentation
 
 It's important 
@@ -62,7 +64,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MzIxNzAzNywxNDYxMTk4MzIyLDEzMT
+eyJoaXN0b3J5IjpbMTY2MjM4NDY1MywxNDYxMTk4MzIyLDEzMT
 A5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4
 NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLT
 IxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYz
