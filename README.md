@@ -22,7 +22,7 @@ We shall use pure functions
 ```js
 page = async* render(state)
 newState = async conciliate(oldState, action)
-updates = async* diff(newState, oldState)as
+updates = async* conciliate(newState, oldState)
 ```
 
 ### Smart requests
@@ -55,10 +55,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NzQ0NzYzMywxMzEwOTk1MTM4LDU5ND
-AzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3
-NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOT
-E3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOCwtMTI4NTkw
-NjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2NTgzNT
-ksLTQzMDcxMDAwNiw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbMzA1NDY3MTMxLDEzMTA5OTUxMzgsNTk0MD
+M5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1
+LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MT
+cwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2
+MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OS
+wtNDMwNzEwMDA2LDU5NjkyNDM2XX0=
 -->
