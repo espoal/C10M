@@ -20,7 +20,7 @@ My idea is to move the load balancer inside the client, hence the *smart client*
 We shall use pure functions
 
 ### Smart requests
-
+Don't request everything, read as stream
 ### User segmentation
 
 Hello
@@ -42,9 +42,9 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDE0NjU4OTksLTExODc0MTE2MDEsLT
-MzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1
-OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNS
-wtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2
-OTI0MzZdfQ==
+eyJoaXN0b3J5IjpbMTQyOTUwNjUyOSwtMTE4NzQxMTYwMSwtMz
+M5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5
+NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC
+0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5
+MjQzNl19
 -->
