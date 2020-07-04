@@ -39,7 +39,7 @@ document.on('event', async () => {
 ```
 <p align="justify">
 Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator so that we don't have to wait for the function to complete, instead we can serve the content as soon as it's ready, for example by loading the head tag as soon as possible we can start prefetching scripts, CSS and images. <br>
-In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because an event might cause multiple requests, 
+In case of an event (URL change, form submission, ....) a new state is generated using an event handler. Again we are using an async iterator because there might be multiple requests, and we don't want to wait for all of them to complete.
 
 </p>
 
@@ -76,11 +76,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5NzcxNjk3LC0xNTEyODQ2MjgyLDU3Mz
-M1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0
-LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMT
-g3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgx
-MjMsLTYxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC
-02MzgyMTY5MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMw
-NzEwMDA2XX0=
+eyJoaXN0b3J5IjpbLTE1MzYxMTc2MCwtMTUxMjg0NjI4Miw1Nz
+MzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTky
+NCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMT
+E4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4
+MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOCwtMTI4NTkwNjAxMC
+wtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2NTgzNTksLTQz
+MDcxMDAwNl19
 -->
