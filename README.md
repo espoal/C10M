@@ -13,6 +13,7 @@ The traditional way to scale web services is to use load balancers and caches. T
 
 My idea is to move the load balancer inside the client, hence the *smart client* name, exploiting Service Worker capabilities to patch fetch requests and reroute them to cache, if possible, or to the best endpoint. Here's a flow diagram of how requests are handled: </p>
 ![Flow diagram of a fetch event](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
+### Pu
 
 ### User segmentation
 
@@ -35,8 +36,9 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMj
-ExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2
-MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC
-0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
+eyJoaXN0b3J5IjpbLTEwODc3NjU3MjUsLTExODc0MTE2MDEsLT
+MzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1
+OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNS
+wtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2
+OTI0MzZdfQ==
 -->
