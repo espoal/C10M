@@ -29,8 +29,8 @@ It's important to segment our user base according to their capabilities, optimal
  
  Other features useful to segment the user base:
  
- - ECMAScript support: Usually developers use Babel to compile the code to the minimum common denominator,
- - Compression support:
+ - ECMAScript support: Usually developers use Babel to compile the code to the minimum common denominator, thus creating huge and bloated Javascript files.
+ - Compression support: Brotli is a new 
  - Media support:
 
 hello
@@ -82,7 +82,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA3NzM0MjA1LDEyMDc0NDg3NTksMTIzOD
+eyJoaXN0b3J5IjpbMzUwMDIyMTUwLDEyMDc0NDg3NTksMTIzOD
 c3NTgxOCwtMTUxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMy
 MiwxMzEwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04ND
 A3OTUyODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1
