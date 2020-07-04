@@ -24,8 +24,8 @@ At a high level one could imagine such a flow:
 </p>
 
 ```js
-page = async* render(state)
-newState = async* eventHandler(oldState, event)
+render = async* state => {...}
+eventHandler = async* (oldState, event) => {...}
 updates = async* conciliate(newState, oldState)
 ```
 <p align="justify">
@@ -67,11 +67,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3MDg4MzI0LDU3MzM1NjY3NywxNDYxMT
-k4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAs
-LTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMz
-k4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1
-LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLT
-IwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LDU5Njky
-NDM2XX0=
+eyJoaXN0b3J5IjpbOTY3MDI1NjMsNTczMzU2Njc3LDE0NjExOT
+gzMjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwt
+ODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOT
+gzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUs
+LTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMj
+AyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0
+MzZdfQ==
 -->
