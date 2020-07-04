@@ -38,7 +38,7 @@ It's important to segment our user base according to their capabilities, optimal
 ### Entry point and subsequent requests
 <p align="justify">
 
-The first time
+The first time a user visits our website 
 </p>
 
 ### Bonus: Pure functions and the cache
@@ -83,11 +83,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNz
-Q0ODc1OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3
-NywxNDYxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OT
-g5MjE2OTAsLTg0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDEx
-NjAxLC0zMzk4MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLT
-YxMjEyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC02Mzgy
-MTY5MjVdfQ==
+eyJoaXN0b3J5IjpbMTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzND
+QwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYy
+ODIsNTczMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5NTEzOCw1OT
+QwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0
+NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMjExMDk3MDIxLD
+kxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2MTgsLTEyODU5
+MDYwMTBdfQ==
 -->
