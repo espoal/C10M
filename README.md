@@ -25,7 +25,7 @@ It's important to segment our user base according to their capabilities, optimal
 
  - Shared Worker:  Browsers that support sharing threads across tabs. Roughly 33% of the market.
  - Service Worker: Browsers that support patching fetch requests inside a service worker.  Cross-tab communication resource sharing can be achieved using IndexedDB. Roughly 60% of the market.
- - No Javascript: In case a browser doesn't fall in the previous two categories, we can provide a JS-less experience. This might be considered too much work for such a small user base, but this work can be used to bootstrap a Google AMP implementation. A lot of functionalities usually achieved through JS can be done in CSS instead, making the page much faster for every user. 
+ - No Javascript: In case a browser doesn't fall in the previous two categories, we can provide a JS-less experience. This might be considered too much work for such a small user base, but this work can be used to bootstrap a Google AMP implementation. A lot of functionalities usually achieved through JS can be done in [CSS instead](https://github.com/you-dont-need/You-Dont-Need-JavaScript), making the page much faster for every user. 
  
  Other features useful to segment the user base:
  
@@ -82,11 +82,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDM2OTY2NjUsMTIwNzQ0ODc1OSwxMj
-M4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3NywxNDYxMTk4
-MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLT
-g0MDc5NTI4NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4
-MzUzMjUsLTIxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC
-0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIw
-MjMxMzUyMl19
+eyJoaXN0b3J5IjpbNDA3NzM0MjA1LDEyMDc0NDg3NTksMTIzOD
+c3NTgxOCwtMTUxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5ODMy
+MiwxMzEwOTk1MTM4LDU5NDAzOTkyNCwxNDk4OTIxNjkwLC04ND
+A3OTUyODcsMTYyMDcxMTQ3NSwtMTE4NzQxMTYwMSwtMzM5ODM1
+MzI1LC0yMTEwOTcwMjEsOTE3MDk4MTIzLC02MTIxMjU5NSwtMj
+ExODU2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIz
+MTM1MjJdfQ==
 -->
