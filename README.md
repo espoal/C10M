@@ -16,10 +16,6 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 ![Flow diagram of a fetch event](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
 </p> 
 
-### Entry point and subsequent requests
-
-Don't request everything, read as stream
-
 ### User segmentation
 
 It's important 
@@ -36,7 +32,11 @@ It's important
 
 hello
 
-### Pure functions and the cache
+### Entry point and subsequent requests
+
+Don't request everything, read as stream
+
+### Bonus: Pure functions and the cache
 <p align="justify">
 Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components.  <br> 
 Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function, compared to having to OOP where you have to patch the internal state of Objects, leading to many mistakes. <br>
@@ -65,6 +65,8 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
+### Load considerations
+
 ### Scaling
 #### Hybrid Cloud Approach
 hello
@@ -76,7 +78,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTQ3OTAxNSwtMTUxMjg0NjI4Miw1Nz
+eyJoaXN0b3J5IjpbMTIzODc3NTgxOCwtMTUxMjg0NjI4Miw1Nz
 MzNTY2NzcsMTQ2MTE5ODMyMiwxMzEwOTk1MTM4LDU5NDAzOTky
 NCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3NSwtMT
 E4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOTE3MDk4
