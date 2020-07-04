@@ -9,7 +9,7 @@ In order to achieve our goals we'll have to rethink how the clients will interac
 
 The traditional way to scale web services is to use load balancers and caches. Typically once a single server can't handle anymore the peak load, the domain will be rerouted to a service whose sole purpose is to spread the load, locally or over the network. Common examples are Nginx in a reverse proxy configuration, HAproxy, or dedicated hardware solutions.
 My idea is to move the load balancer inside the client, hence the *smart client* name, exploiting Service Worker capabilities to patch fetch requests and reroute them to cache, if possible, or to the first available endpoint.
-
+![Flow diagram of a fe](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/fetch_flow.svg)
 
 ### User segmentation
 
@@ -32,7 +32,8 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3MDk4MTIzLC02MTIxMjU5NSwtMjExOD
-U2MzYxOCwtMTI4NTkwNjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1
-MjIsLTEwNzQ2NTgzNTksLTQzMDcxMDAwNiw1OTY5MjQzNl19
+eyJoaXN0b3J5IjpbLTc5NjE3OTU4Niw5MTcwOTgxMjMsLTYxMj
+EyNTk1LC0yMTE4NTYzNjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5
+MjUsLTIwMjMxMzUyMiwtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LD
+U5NjkyNDM2XX0=
 -->
