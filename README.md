@@ -47,10 +47,10 @@ Eventually most of the client requests will end up with a HTTP 304 response, whi
 
 ### Bonus: Pure functions and the cache
 <p align="justify">
-Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state, thus allowing us to build easily testable components. 
+Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend on and do not have an internal state, thus allowing us to build easily testable components. 
  <br> 
  
-Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function, compared to having to OOP where you have to patch the internal state of Objects, leading to many mistakes. <br>
+Another advantage of pure functions is that they pair very well with caches. Given a cached state, I can easily hydrate it by running a render function, compared to  to OOP where you have to patch the internal state of Objects, leading to many mistakes. <br>
 The render loop could be something like: 
 </p>
 
@@ -101,11 +101,11 @@ hello
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjg5NjEyNzIsMTM3MjU0ODQ4MywtMj
-AyOTU5NjU3NywtODcwOTk4ODM4LDI0MDM5ODQ1NSwtMjAzMzk5
-MTc3NCwtNTYwOTY3OSwyNzUzNzMxMzQsMTk3MzY1MjA4NCwtMj
-U3ODAyMjY3LDE5MTY4NjE5NjksMTUxNDQyNDcwNCwxNDE1ODkz
-NTg1LDgzNDQwMDE5MSwxMjA3NDQ4NzU5LDEyMzg3NzU4MTgsLT
-E1MTI4NDYyODIsNTczMzU2Njc3LDE0NjExOTgzMjIsMTMxMDk5
-NTEzOF19
+eyJoaXN0b3J5IjpbMTk2OTg5NzM1MCwtMTE2ODk2MTI3MiwxMz
+cyNTQ4NDgzLC0yMDI5NTk2NTc3LC04NzA5OTg4MzgsMjQwMzk4
+NDU1LC0yMDMzOTkxNzc0LC01NjA5Njc5LDI3NTM3MzEzNCwxOT
+czNjUyMDg0LC0yNTc4MDIyNjcsMTkxNjg2MTk2OSwxNTE0NDI0
+NzA0LDE0MTU4OTM1ODUsODM0NDAwMTkxLDEyMDc0NDg3NTksMT
+IzODc3NTgxOCwtMTUxMjg0NjI4Miw1NzMzNTY2NzcsMTQ2MTE5
+ODMyMl19
 -->
