@@ -79,6 +79,8 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 
+This is the architecture. 
+
 ### Load considerations
 #### Hybrid Cloud Approach
 <p align="justify">
@@ -103,11 +105,11 @@ Let's see if we can reach our goal of 10 M concurrent users
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQyMzE2MjIsMjEzNzU2NTA4OSwtMT
-E2ODk2MTI3MiwxMzcyNTQ4NDgzLC0yMDI5NTk2NTc3LC04NzA5
-OTg4MzgsMjQwMzk4NDU1LC0yMDMzOTkxNzc0LC01NjA5Njc5LD
-I3NTM3MzEzNCwxOTczNjUyMDg0LC0yNTc4MDIyNjcsMTkxNjg2
-MTk2OSwxNTE0NDI0NzA0LDE0MTU4OTM1ODUsODM0NDAwMTkxLD
-EyMDc0NDg3NTksMTIzODc3NTgxOCwtMTUxMjg0NjI4Miw1NzMz
-NTY2NzddfQ==
+eyJoaXN0b3J5IjpbNDM5NTE0NjA2LDIxMzc1NjUwODksLTExNj
+g5NjEyNzIsMTM3MjU0ODQ4MywtMjAyOTU5NjU3NywtODcwOTk4
+ODM4LDI0MDM5ODQ1NSwtMjAzMzk5MTc3NCwtNTYwOTY3OSwyNz
+UzNzMxMzQsMTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MTY4NjE5
+NjksMTUxNDQyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5MSwxMj
+A3NDQ4NzU5LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNTczMzU2
+Njc3XX0=
 -->
