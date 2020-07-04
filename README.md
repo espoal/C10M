@@ -73,7 +73,6 @@ The render is itself an async iterator, so it can yield to the main thread betwe
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 ### Load considerations
 #### Hybrid Cloud Approach
-
 <p align="justify">
 One common question that often comes up when architecting the backend: Should we use bare metal servers or a PaaS provider? <br>
 A PaaS provider like AWS can significantly reduce time to market, tie the cost to actual consumption and allow to delegate a large portion of system maintenance. On the other hand this comes at a high price point, and a skilled linux engineer is still required to manage everything. <br>
@@ -87,14 +86,16 @@ When I started working on scaling backends, around 7 years ago, the typical serv
 In general it's rarely worthwhile to scale up, as hardware prices grow much faster than capacity. If one has the choice he should always choose to scale out instead, leaving scaling up to yearly server updates that leverage the normal market evolution. 
 </p>
 
+### A possible setup
+hello
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTYwNzQ2NSwtODcwOTk4ODM4LDI0MD
-M5ODQ1NSwtMjAzMzk5MTc3NCwtNTYwOTY3OSwyNzUzNzMxMzQs
-MTk3MzY1MjA4NCwtMjU3ODAyMjY3LDE5MTY4NjE5NjksMTUxND
-QyNDcwNCwxNDE1ODkzNTg1LDgzNDQwMDE5MSwxMjA3NDQ4NzU5
-LDEyMzg3NzU4MTgsLTE1MTI4NDYyODIsNTczMzU2Njc3LDE0Nj
-ExOTgzMjIsMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5
-MF19
+eyJoaXN0b3J5IjpbLTIwMjk1OTY1NzcsLTg3MDk5ODgzOCwyND
+AzOTg0NTUsLTIwMzM5OTE3NzQsLTU2MDk2NzksMjc1MzczMTM0
+LDE5NzM2NTIwODQsLTI1NzgwMjI2NywxOTE2ODYxOTY5LDE1MT
+Q0MjQ3MDQsMTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNzQ0ODc1
+OSwxMjM4Nzc1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3NywxND
+YxMTk4MzIyLDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2
+OTBdfQ==
 -->
