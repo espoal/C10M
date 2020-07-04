@@ -29,7 +29,7 @@ newState = async* eventHandler(oldState, event)
 updates = async* conciliate(newState, oldState)
 ```
 <p align="justify">
-Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. 
+Since render is a pure function that depends only on the state, we can bootstrap the DOM by using a default and then stream the result. We are using an async iterator because we don't have to wait for the function to complete, instead it's beneficial to serve the content as soon as it's ready, for example by loading the head t
 </p>
 
 ### Entry point and subsequent requests
@@ -65,10 +65,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODk2Nzk2OSwxNDYxMTk4MzIyLDEzMT
-A5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4
-NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLT
-IxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYz
-NjE4LC0xMjg1OTA2MDEwLC02MzgyMTY5MjUsLTIwMjMxMzUyMi
-wtMTA3NDY1ODM1OSwtNDMwNzEwMDA2LDU5NjkyNDM2XX0=
+eyJoaXN0b3J5IjpbNTk1NDM3NzAzLDE0NjExOTgzMjIsMTMxMD
+k5NTEzOCw1OTQwMzk5MjQsMTQ5ODkyMTY5MCwtODQwNzk1Mjg3
+LDE2MjA3MTE0NzUsLTExODc0MTE2MDEsLTMzOTgzNTMyNSwtMj
+ExMDk3MDIxLDkxNzA5ODEyMywtNjEyMTI1OTUsLTIxMTg1NjM2
+MTgsLTEyODU5MDYwMTAsLTYzODIxNjkyNSwtMjAyMzEzNTIyLC
+0xMDc0NjU4MzU5LC00MzA3MTAwMDYsNTk2OTI0MzZdfQ==
 -->
