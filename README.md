@@ -56,7 +56,7 @@ const conciliate = async* (oldState, newState) => {... yield diff}
 
 render(initialState) // this should be skipped by using SSR
 
-document.on('event', async () => {
+document.on('event', async event => {
 	render(
 		conciliate(state, 
 			eventHandler(state, event)
@@ -84,11 +84,11 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc1MzczMTM0LDE5NzM2NTIwODQsLTI1Nz
-gwMjI2NywxOTE2ODYxOTY5LDE1MTQ0MjQ3MDQsMTQxNTg5MzU4
-NSw4MzQ0MDAxOTEsMTIwNzQ0ODc1OSwxMjM4Nzc1ODE4LC0xNT
-EyODQ2MjgyLDU3MzM1NjY3NywxNDYxMTk4MzIyLDEzMTA5OTUx
-MzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4NywxNj
-IwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLTIxMTA5
-NzAyMV19
+eyJoaXN0b3J5IjpbLTU2MDk2NzksMjc1MzczMTM0LDE5NzM2NT
+IwODQsLTI1NzgwMjI2NywxOTE2ODYxOTY5LDE1MTQ0MjQ3MDQs
+MTQxNTg5MzU4NSw4MzQ0MDAxOTEsMTIwNzQ0ODc1OSwxMjM4Nz
+c1ODE4LC0xNTEyODQ2MjgyLDU3MzM1NjY3NywxNDYxMTk4MzIy
+LDEzMTA5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MD
+c5NTI4NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUz
+MjVdfQ==
 -->
