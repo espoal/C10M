@@ -17,7 +17,11 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 </p> 
 
 ### Pure functions and the cache
-Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend
+<p align="justify">
+Functional programming has become popular in the Javascript world thanks to React, but is well suited to front end programming in general. Pure functions are functions that will always have the same output given an input, i.e. they do not depend and do not have an internal state.  <br> 
+Pure functions have the advant
+</p>
+
 ```js
 page = async* render(state)
 newState = async eventHandler(oldState, event)
@@ -41,6 +45,7 @@ It's important
  - Media support:
 
 
+
 ## Backend Architecture
 ![Server Layout](https://raw.githubusercontent.com/alberto-esposito/C10M/master/assets/server.svg)
 ### Scaling
@@ -54,7 +59,7 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTUzMDE3NiwxNDYxMTk4MzIyLDEzMT
+eyJoaXN0b3J5IjpbMTk3ODQwOTI5NSwxNDYxMTk4MzIyLDEzMT
 A5OTUxMzgsNTk0MDM5OTI0LDE0OTg5MjE2OTAsLTg0MDc5NTI4
 NywxNjIwNzExNDc1LC0xMTg3NDExNjAxLC0zMzk4MzUzMjUsLT
 IxMTA5NzAyMSw5MTcwOTgxMjMsLTYxMjEyNTk1LC0yMTE4NTYz
