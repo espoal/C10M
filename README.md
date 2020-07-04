@@ -19,9 +19,9 @@ My idea is to move the load-balancer inside the client, hence the *smart client*
 ### Pure functions and the cache
 We shall use pure functions
 
-```
+```js
 page = f(state)
-newState = f(state,action)
+const newState = f(state,action)
 ```
 
 ### Smart requests
@@ -54,10 +54,10 @@ hello
 #### Unix Domain sockets vs TCP/IP protocol
 #### HTTP/3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMDk5NTEzOCw1OTQwMzk5MjQsMTQ5OD
-kyMTY5MCwtODQwNzk1Mjg3LDE2MjA3MTE0NzUsLTExODc0MTE2
-MDEsLTMzOTgzNTMyNSwtMjExMDk3MDIxLDkxNzA5ODEyMywtNj
-EyMTI1OTUsLTIxMTg1NjM2MTgsLTEyODU5MDYwMTAsLTYzODIx
-NjkyNSwtMjAyMzEzNTIyLC0xMDc0NjU4MzU5LC00MzA3MTAwMD
-YsNTk2OTI0MzZdfQ==
+eyJoaXN0b3J5IjpbLTQ4MzYxMTQ0MiwxMzEwOTk1MTM4LDU5ND
+AzOTkyNCwxNDk4OTIxNjkwLC04NDA3OTUyODcsMTYyMDcxMTQ3
+NSwtMTE4NzQxMTYwMSwtMzM5ODM1MzI1LC0yMTEwOTcwMjEsOT
+E3MDk4MTIzLC02MTIxMjU5NSwtMjExODU2MzYxOCwtMTI4NTkw
+NjAxMCwtNjM4MjE2OTI1LC0yMDIzMTM1MjIsLTEwNzQ2NTgzNT
+ksLTQzMDcxMDAwNiw1OTY5MjQzNl19
 -->
